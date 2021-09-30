@@ -7,10 +7,12 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     public TextMeshProUGUI textHolder;
+    public GameObject platform;
     private bool keybinds;
 
     private void Start()
     {
+        platform.SetActive(false);
         keybinds = false;
     }
 
@@ -21,7 +23,7 @@ public class Button : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                Debug.Log("GG");
+                platform.SetActive(true);
             }
         }
     }

@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class NPC : MonoBehaviour
 {
     public GameObject player;
-
     private NavMeshAgent npc;
         
     // Start is called before the first frame update
